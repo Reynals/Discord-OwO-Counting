@@ -1,0 +1,32 @@
+{
+  "name": "discord-owo-counting",
+  "version": "1.0.0",
+  "description": "A simple discord counting bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "discord.js": "github:discordjs/discord.js#main",
+    "owo-counting": "^1.0.3"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devinstr/discord-owo-coubting.git"
+  },
+  "keywords": [
+    "discord-bot",
+    "discord-js",
+    "discord-pokecord",
+    "discord-game"
+  ],
+  "author": "Devin#3583",
+  "license": "See in file LICENSE",
+  "bugs": {
+    "url": "https://github.com/devinstr/discord-owo-counting/issues"
+  },
+  "homepage": "https://github.com/devinstr/discord-owo-counting#readme"
+}
