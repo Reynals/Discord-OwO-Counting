@@ -13,17 +13,16 @@ client.counting = new Counting({
     }
 });
 client.counting.db = new Map(); // custom database, but this optional (not permanents). you can make custom with others database (permanents) thats you know
+client.counting.on('ready', () => console.log(`Counting is Ready! now ${client.counting.readyAt}`));
+
+client.counting.on('countCreate', (count) => {
+    client.db.set(count.type+'.'+count.user.id); // owo.0123456789
+    console.log(`I see, that ${count.user.tag} has typing ${count.type} to ${(client.db.get(count.type+'.'+count.user.id) || 0)+ 1}x`);
+});
 
 for (file of ['commands','events']) {
     require(`./handlers/${file}`)(client);
 }
-
-client.counting.on('ready', () => console.log(`Counting is Ready! now ${client.counting.readyAt}`));
-
-client.counting.on('counting', (count) => {
-    client.db.set(count.type+'.'+count.user.id); // owo.0123456789
-    console.log(`I see, that ${count.user.tag} has typing ${count.type} to ${(client.db.get(count.type+'.'+count.user.id) || 0)+ 1}x`);
-});
 
 client.login(process.env['TOKEN']); // bot login
 
