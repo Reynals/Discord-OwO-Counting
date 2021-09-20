@@ -14,7 +14,7 @@ module.exports = function(client, message){
     
     client.args = message.content.slice(prefix.length).trim().split(/ +/g);
     
-    const commandx = args.shift().toLowerCase();
+    const commandx = client.args.shift().toLowerCase();
     const commands = client.commands.get(commandx) || client.commands.find((x) => x.aliases && x.aliases.includes(commandx));
    
     if (commands) {

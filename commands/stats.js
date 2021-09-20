@@ -4,9 +4,9 @@ module.exports = {
         usage: '[user]',
         run(client, message){
                 const data = {
-                        owo: client.counting.db.get('owo.'+message.author.id),
-                        hunt: client.counting.db.get('hunt.'+message.author.id),
-                        battle: client.counting.db.get('battle.'+message.author.id),
+                        owo: client.counting.db.get('owo.'+message.author.id) || 0,
+                        hunt: client.counting.db.get('hunt.'+message.author.id) || 0,
+                        battle: client.counting.db.get('battle.'+message.author.id) || 0,
                 };
                 
                 const embed = client.createEmbed()
