@@ -10,7 +10,7 @@ module.exports = {
                 };
                 
                 const embed = client.createEmbed()
-                        .setTitle(`${message.author.username}'s OWO stats`)
+                        .setTitle(`${message.author.username}'s OwO Stats`)
                         .setDescription(`Hi there! here's my OwO count data...`)
                         .addField('Total Count', `owo: ${data.owo}\nhunt: ${data.hunt}\nbattle: ${data.battle}`);
               
