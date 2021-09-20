@@ -1,11 +1,7 @@
-const { MetaCommand } = require('owo-counting');
-
-module.exports = new MetaCommand({
-        
+module.exports = {
         description: 'Check users count stats',
         aliases: ['count','c','s'],
         usage: '[user]',
-        permissions: {},
         run(client, message){
                 const data = {
                         owo: client.counting.db.get('owo.'+message.author.id),
@@ -20,5 +16,4 @@ module.exports = new MetaCommand({
               
                 message.channel.send({ embeds: [embed] });
         },
-        SlashCommand: {}
-})
+};

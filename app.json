@@ -1,0 +1,19 @@
+{
+    "name": "Discord-OwO-Counting",
+    "description": "Just discord bot",
+    "repository": "https://github.com/DevinStr/Discord-OwO-Counting",
+    "logo": "https://discord.com/assets/f9bb9c4af2b9c32a2c5ee0014661546d.png",
+    "keywords": ["node", "discord", "bot"],
+    "image": "heroku/nodejs",
+    "buildpacks": [
+        {
+            "url": "heroku/nodejs"
+        }
+    ],
+    "env": {
+      "TOKEN": {
+          "description": "Your Discord Bot Token",
+          "required": true
+      }
+  }
+}

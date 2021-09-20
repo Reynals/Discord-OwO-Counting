@@ -18,7 +18,7 @@ module.exports = function(client, message){
     const commands = client.commands.get(commandx) || client.commands.find((x) => x.aliases && x.aliases.includes(commandx));
    
     if (commands) {
-        commands.perform(client, message);
+        commands.run(client, message);
     } else {
         return message.reply('❌ Cannot execute that commands! :<').then(m=>setTimeout(()=>m.delete(),5000));
     }
