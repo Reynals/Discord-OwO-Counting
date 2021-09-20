@@ -19,5 +19,6 @@ module.exports = new MetaCommand({
                         .addField('Total Count', `owo: ${data.owo}\nhunt: ${data.hunt}\nbattle: ${data.battle}`);
               
                 message.channel.send({ embeds: [embed] });
-        }
+        },
+        SlashCommand: {}
 })
