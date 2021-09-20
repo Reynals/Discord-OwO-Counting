@@ -7,6 +7,6 @@ module.exports = function(client){
         const commands = require(`../commands/${name}`);
         commands.SlashCommand = {};
         commands.name = name.split('.')[0];
-        client.commands.push(commands);
+        client.commands.set(name.split('.')[0],commands);
     }
 }
