@@ -1,5 +1,5 @@
 const { Client, Collection, MessageEmbed } = require('discord.js');
-const client = new Client({ intents: ['GUILDS', 'GUILD_MESSAGE'] });
+const client = new Client({ intents: ['GUILDS', 'GUILD_MESSAGES'] });
 client.discord = require('./settings/config.json');
 client.commands = new Collection();
 clienr.createEmbed = new MessageEmbed().setColor(client.discord.colors);
