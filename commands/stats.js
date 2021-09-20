@@ -5,7 +5,7 @@ module.exports = new MetaCommand({
         description: 'Check users count stats',
         aliases: ['count','c','s'],
         usage: '[user]',
-        
+        permissions: {},
         run(client, message){
                 const data = {
                         owo: client.counting.db.get('owo.'+message.author.id),
