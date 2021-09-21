@@ -1,7 +1,13 @@
 module.exports = function(client, message){
     if (message.author.bot) return;
     
-    client.counting.create(message); // creating counting owo!
+    client.counting.create(message, {
+        reminder: {
+            owo:true,
+            hunt:true,
+            battle:true
+        }
+    }); // creating counting owo!
     
     const prfMention = new RegExp(`^<@!?${client.user.id}> `);
     const contentRaw = message.content.toLowerCase();
