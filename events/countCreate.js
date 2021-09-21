@@ -1,4 +1,4 @@
-module.exports = (count) => {
+module.exports = (client, count) => {
     const usercount = client.counting.db.get(count.type + '.' + count.user.id) || 0;
     const daily = client.counting.db.get('daily.'+count.type + '.' + count.user.id) || 0;
     client.counting.db.set(count.type + '.' + count.user.id, usercount + 1); // owo.0123456789
