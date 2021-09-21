@@ -8,14 +8,14 @@
   },
   "dependencies": {
     "discord.js": "github:discordjs/discord.js#main",
-    "owo-counting": "^1.0.3"
+    "owo-counting": "^1.0.4"
   },
   "engines": {
     "node": "16.x"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devinstr/discord-owo-coubting.git"
+    "url": "git+https://github.com/devinstr/discord-owo-counting.git"
   },
   "keywords": [
     "discord-bot",
