@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "discord.js": "github:discordjs/discord.js#main",
-    "owo-counting": "^1.0.0-beta"
+    "owo-counting": "^1.0.1-beta"
   },
   "engines": {
     "node": "16.x"
